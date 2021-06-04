@@ -10,7 +10,7 @@ namespace Employee_PayRoll_RestSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLie("Welcome to EMPLOYEE PAYROLL RESTSHARP......");
+            Console.WriteLine("Welcome to EMPLOYEE PAYROLL RESTSHARP......");
         }
     }
 }
