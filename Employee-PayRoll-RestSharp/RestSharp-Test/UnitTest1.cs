@@ -51,12 +51,34 @@ namespace RestSharp_Test
             //get 
             List<Employee> employeeList = JsonConvert.DeserializeObject<List<Employee>>(response.Content);
             //checking whether list is equal to count
-            Assert.AreEqual(4, employeeList.Count);
+            Assert.AreEqual(5, employeeList.Count);
 
             foreach (Employee emp in employeeList)
             {
                 Console.WriteLine("Id: " + emp.Id + "\t" + "Name: " + emp.Name + "\t" + "Salary: " + emp.Salary);
             }
+        }
+
+        [TestMethod]
+        public void OnCallingPostAPI_ReturnEmployeeObject()
+        {
+            //Arrange
+            //Initialize the request for POST to add new employee
+            RestRequest request = new RestRequest("/employees/list", Method.POST);
+            JsonObject jsonObj = new JsonObject();
+            jsonObj.Add("name", "Rajendra");
+            jsonObj.Add("salary", "714034");
+            jsonObj.Add("id", "5");
+
+            //Act
+            IRestResponse response = client.Execute(request);
+
+            //Assert
+            Assert.AreEqual(HttpStatusCode.Created, response.StatusCode);
+            Employee employee = JsonConvert.DeserializeObject<Employee>(response.Content);
+            Assert.AreEqual("Rajendra", employee.Name);
+            Assert.AreEqual("714034", employee.Salary);
+            Console.WriteLine(response.Content);
         }
     }
 }
