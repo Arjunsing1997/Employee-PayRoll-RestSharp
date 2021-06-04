@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee-PayRoll-RestSharp", "Employee-PayRoll-RestSharp\Employee-PayRoll-RestSharp.csproj", "{673BF874-4928-4E2C-936B-E46BA70BAAE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSharp-Test", "RestSharp-Test\RestSharp-Test.csproj", "{0E0E2FCE-AD81-494B-907E-58243553CCF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{673BF874-4928-4E2C-936B-E46BA70BAAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{673BF874-4928-4E2C-936B-E46BA70BAAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{673BF874-4928-4E2C-936B-E46BA70BAAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0E2FCE-AD81-494B-907E-58243553CCF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0E2FCE-AD81-494B-907E-58243553CCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0E2FCE-AD81-494B-907E-58243553CCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0E2FCE-AD81-494B-907E-58243553CCF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
